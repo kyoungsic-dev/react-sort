@@ -1,0 +1,38 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 5rem 0;
+  background-color: #fafafa;
+}
+
+.sort {
+  width: 400px;
+  box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.1);
+  list-style: none;
+}
+
+.sort-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 1rem 0.5rem;
+  justify-content: space-between;
+  list-style-type: none;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: -1px;
+  }
+
+  > svg {
+    font-size: 1.25rem;
+    fill: #333;
+  }
+
+  > p {
+    font-size: 1.1rem;
+  }
+}
